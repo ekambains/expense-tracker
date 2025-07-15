@@ -3,7 +3,6 @@ import dotenv from 'dotenv';
 import { connectDB } from './config/db.js';
 import session from 'express-session';
 import ConnectMongoDBSession from 'connect-mongodb-session';
-import { isAuth } from './middlewares/isAuth.js';
 import { authRouter } from './routes/authRoutes.js';
 import { expenseRouter } from './routes/expenseRoutes.js';
 
@@ -30,10 +29,6 @@ app.use(express.json());
 
 app.use("/api", authRouter);
 app.use("/api", expenseRouter);
-
-app.get("/hello", isAuth, (req, res) => {
-    res.send("Hello World");
-});
 
 app.listen(port, () => {
     connectDB();

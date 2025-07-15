@@ -1,6 +1,6 @@
 import express from 'express';
-import { Expense } from '../models/expense';
-import { isAuth } from '../middlewares/isAuth';
+import { Expense } from '../models/expense.js';
+import { isAuth } from '../middlewares/isAuth.js';
 import mongoose from 'mongoose';
 
 export const expenseRouter = express.Router();
