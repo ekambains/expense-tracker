@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpense Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vercel/geist-font@latest/css/geist.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="nav">
+            <span class="logo">XPEN$E</span>
+            <div class="navElements">
+                <div>
+                    <i data-feather="layout"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div>
+                    <i data-feather="settings"></i>
+                    <span>Settings</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Dashboard Nav -->
+            <div class="dashboardNav">
+                <span>Dashboard</span>
+                <button>Add Expense</button>
+            </div>
+            <!-- Stats -->
+            <div class="dashboardStats">
+                <div class="statsComp">
+                    <span>Total Expense</span>
+                    <span class="statsValue" id="totalExpense">2504.45 USD</span>
+                </div>
+                <div class="statsComp">
+                    <span>Highest Expense</span>
+                    <span class="statsValue" id="highestExpense">576.32 USD</span>
+                </div>
+            </div>
+            <!-- Recent Transactions -->
+            <div class="recentTransactions">
+                <span>Recent Transactions</span>
+                <div class="rtComp">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
