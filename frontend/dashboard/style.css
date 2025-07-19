@@ -13,7 +13,7 @@ body {
 .nav{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 250px;
     gap: 50px;
 }
 
@@ -34,6 +34,11 @@ body {
     gap: 10px;
     align-items: center;
     text-align: center;
+}
+
+.navElements div:last-child{
+    margin-top: 400px;
+    color: gray;
 }
 
 .navElements span {
@@ -61,9 +66,9 @@ body {
 
 .dashboardNav button{
     background-color: black;
-    padding: 10px;
+    padding: 12px 25px;
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 0;
 }
 
@@ -100,10 +105,71 @@ body {
 .recentTransactions{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     margin-top: 25px;
 }
 
 .recentTransactions span:first-child{
     font-size: 16px;
+}
+
+.rtComp{
+    height: 100px;
+    width: 800px;
+    border-radius: 10px;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 5px 20px;
+}
+
+.rtCategory{
+    background-color: lightgray;
+    border-radius: 100%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rtCompPart2{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rtCompPrice{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rtCompPrice span:first-child{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.rtCompPrice span:last-child{
+    color: gray;
+}
+
+.rtCompButtons{
+    display: flex;
+    gap: 20px;
+}
+
+.rtCompButtons button{
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.rtCompButtons button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.838);
 }
